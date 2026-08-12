@@ -10,4 +10,6 @@ int main(){
     printf("%d",*memo);
 
     printf("\n");
+    free(ptr); //free the memory
+    ptr=NULL; //set to the null to make its final address 0X0
 }

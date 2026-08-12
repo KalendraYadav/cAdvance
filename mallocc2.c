@@ -7,6 +7,7 @@ int main(){
 
     int*ptr=(int*)calloc(n,sizeof(int));
     int *p=ptr;
+    int *t=p; //kept for using in free
 
     for(int i=0;i<n;i++){
         scanf("%d",&(*ptr));
@@ -18,7 +19,7 @@ int main(){
         printf("%d ",(*p));
         p++;
     }
-    free(ptr);
+    free(t);
 
     return 0;
 }
